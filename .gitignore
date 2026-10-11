@@ -1,0 +1,27 @@
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Backend build output
+backend/target/
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Logs
+*.log
+
+# Database backups
+*.sql
+*.sql.gz
+*.dump
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -22,7 +22,7 @@ function Register({ onRegister, onShowLogin }) {
 
     try {
       const response = await fetch(
-        'http://localhost:8080/api/auth/register',
+        'http://https://devboard-production-c684.up.railway.app/api/auth/register',
         {
           method: 'POST',
           headers: {

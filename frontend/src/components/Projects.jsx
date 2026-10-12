@@ -21,7 +21,7 @@ function Projects() {
   const [loading, setLoading] = useState(true)
   const [formOpen, setFormOpen] = useState(false)
 
-  const API_URL = 'http://localhost:8080/api/projects'
+  const API_URL = 'http://https://devboard-production-c684.up.railway.app/api/projects'
 
   function getHeaders(includeContentType = false) {
     const token = localStorage.getItem('token')

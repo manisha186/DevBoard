@@ -40,7 +40,7 @@ export default function Astro() {
       }
 
       const response = await fetch(
-        "http://localhost:8080/api/astro/chat",
+        "http://https://devboard-production-c684.up.railway.app/api/astro/chat",
         {
           method: "POST",
           headers: {

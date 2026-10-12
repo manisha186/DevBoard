@@ -13,7 +13,7 @@ function Login({ onLogin, onShowRegister }) {
 
     try {
       const response = await fetch(
-        'http://localhost:8080/api/auth/login',
+        'http://https://devboard-production-c684.up.railway.app/api/auth/login',
         {
           method: 'POST',
           headers: {

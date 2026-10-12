@@ -47,24 +47,29 @@ public class SecurityConfig {
     }
 
     @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration config = new CorsConfiguration();
+public CorsConfigurationSource corsConfigurationSource() {
+    CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(List.of(
-    "http://localhost:5173",
-    "http://localhost:5175",
-    "https://dev-board-sandy.vercel.app"));
+    config.setAllowedOrigins(List.of(
+        "http://localhost:5173",
+        "http://localhost:5175",
+        "https://dev-board-sandy.vercel.app"
+    ));
 
-            List.of("GET", "POST", "PUT", "DELETE", "OPTIONS");
-        config.setAllowedHeaders(
-            List.of("Authorization", "Content-Type"));
+    config.setAllowedMethods(
+        List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")
+    );
 
-        UrlBasedCorsConfigurationSource source =
-            new UrlBasedCorsConfigurationSource();
+    config.setAllowedHeaders(
+        List.of("Authorization", "Content-Type")
+    );
 
-        source.registerCorsConfiguration("/**", config);
-        return source;
-    }
+    UrlBasedCorsConfigurationSource source =
+        new UrlBasedCorsConfigurationSource();
+
+    source.registerCorsConfiguration("/**", config);
+    return source;
+}
 
     @Bean
     public PasswordEncoder passwordEncoder() {

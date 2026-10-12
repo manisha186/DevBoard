@@ -28,8 +28,8 @@ function Issues() {
   const [priorityFilter, setPriorityFilter] = useState('ALL')
   const [statusFilter, setStatusFilter] = useState('ALL')
 
-  const API = 'http://https://devboard-production-c684.up.railway.app/api/issues'
-  const PROJECT_API = 'http://https://devboard-production-c684.up.railway.app/api/projects'
+  const API = 'https://devboard-production-c684.up.railway.app/api/issues'
+  const PROJECT_API = 'https://devboard-production-c684.up.railway.app/api/projects'
 
   function getHeaders(includeContentType = false) {
     const token = localStorage.getItem('token')

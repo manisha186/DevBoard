@@ -13,7 +13,7 @@ function Login({ onLogin, onShowRegister }) {
 
     try {
       const response = await fetch(
-        'http://https://devboard-production-c684.up.railway.app/api/auth/login',
+        'https://devboard-production-c684.up.railway.app/api/auth/login',
         {
           method: 'POST',
           headers: {

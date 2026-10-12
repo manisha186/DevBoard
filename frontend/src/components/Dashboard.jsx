@@ -26,8 +26,8 @@ function Dashboard() {
       }
 
       const [projectResponse, issueResponse] = await Promise.all([
-        fetch('http://https://devboard-production-c684.up.railway.app/api/projects', { headers }),
-        fetch('http://https://devboard-production-c684.up.railway.app/api/issues', { headers })
+        fetch('https://devboard-production-c684.up.railway.app/api/projects', { headers }),
+        fetch('https://devboard-production-c684.up.railway.app/api/issues', { headers })
       ])
 
       if (!projectResponse.ok || !issueResponse.ok) {

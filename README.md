@@ -75,7 +75,7 @@ cd backend
 
 The backend runs at:
 
-`http://localhost:8080`
+`https://devboard-production-c684.up.railway.app`
 
 ### 2. Start the Frontend
 

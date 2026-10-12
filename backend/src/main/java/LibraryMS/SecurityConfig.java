@@ -50,8 +50,11 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
 
-        config.setAllowedOrigins(List.of("http://localhost:5173", "http://localhost:5175"));
-        config.setAllowedMethods(
+        config.setAllowedOrigins(List.of(
+    "http://localhost:5173",
+    "http://localhost:5175",
+    "https://dev-board-sandy.vercel.app"
+));
             List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(
             List.of("Authorization", "Content-Type"));

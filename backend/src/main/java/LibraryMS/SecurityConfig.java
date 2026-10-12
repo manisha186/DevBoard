@@ -53,9 +53,9 @@ public class SecurityConfig {
         config.setAllowedOrigins(List.of(
     "http://localhost:5173",
     "http://localhost:5175",
-    "https://dev-board-sandy.vercel.app"
-));
-            List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+    "https://dev-board-sandy.vercel.app"));
+    
+            List.of("GET", "POST", "PUT", "DELETE", "OPTIONS");
         config.setAllowedHeaders(
             List.of("Authorization", "Content-Type"));
 
